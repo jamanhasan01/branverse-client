@@ -1,17 +1,31 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@plugin "daisyui" {
-    themes: light --default, dark --prefersdark, cupcake;
+@plugin "daisyui";
+
+@layer base {
+  :root {
+    --color-primary: #2563EB;
   }
 
-  @layer base {
-    body {
-      @apply font-sans;
-    }
+  body {
+    @apply font-sans;
   }
-  
-  @layer components {
-    .container {
-      @apply mx-auto !px-4 sm:!px-6 lg:!px-8 !max-w-[1200px]; /* Custom max-width */
-    }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto !px-4 sm:!px-6 lg:!px-8 !max-w-[1200px];
   }
+
+  .bg-main {
+    background-color: var(--color-main);
+  }
+
+  .text-main {
+    color: var(--color-main);
+  }
+
+  .border-main {
+    border-color: var(--color-main);
+  }
+}
