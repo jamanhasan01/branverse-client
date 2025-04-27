@@ -1,6 +1,12 @@
 import AnimatedBorderCard from "../../components/AnimatedBorderCard";
 import Title from "../../components/Title";
-import { FiUsers, FiHeart, FiLayers, FiClock, FiTrendingUp } from "react-icons/fi";
+import {
+  FiUsers,
+  FiHeart,
+  FiLayers,
+  FiClock,
+  FiTrendingUp,
+} from "react-icons/fi";
 
 const ServicesSection = () => {
   return (
@@ -10,7 +16,6 @@ const ServicesSection = () => {
         <Title
           title="Why Branverse?"
           subtitle="We combine creative thinking with proven strategies to help you grow smarter, faster, and stronger."
-          text_align="start"
           hColor="#2563EB"
         />
 
@@ -18,7 +23,6 @@ const ServicesSection = () => {
         <div className="grid grid-cols-12 gap-6 mt-10">
           {/* Left Side - 7 Columns */}
           <div className="col-span-12 lg:col-span-7 grid grid-cols-2 gap-6">
-            
             {/* Card 1 */}
             <div className="border-2 border-gray-100 rounded-lg shadow-lg p-6 flex flex-col justify-start gap-4 h-full">
               <div className="text-blue-600 text-3xl">
@@ -56,20 +60,20 @@ const ServicesSection = () => {
                 customer needs.
               </p>
             </div>
-
           </div>
 
           {/* Right Side - 5 Columns */}
-          <div className="col-span-12 lg:col-span-5 bg-blue-600 p-8 flex flex-col justify-center text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <div className="text-white text-3xl mb-4">
+          <div className="col-span-12 lg:col-span-5 bg-blue-600 p-8 gap-4 flex flex-col justify-center text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="text-white text-3xl">
               <FiClock size={40} />
             </div>
             <h4>On-Time Delivery</h4>
-            <p className="text-white text-base">
-              We respect timelines — no delays, no excuses.
+            <p className="text-white text-lg">
+              We respect timelines — no delays, no excuses. Our team is
+              committed to delivering quality work within the promised time
+              frame, ensuring you never have to worry about missed deadlines.
             </p>
           </div>
-
         </div>
       </div>
     </section>

@@ -3,14 +3,14 @@ import heroImg from "../../assets/hero_image.png";
 const HeroSection = () => {
   return (
     <section className="bg-gradient-to-b from-[#2563EB] to-[#1E40AF] ">
-      <div className="container py-20">
+      <div className="container">
         <div className="grid grid-cols-2 gap-5 items-center">
           {/*left side contents */}
           <div className=" space-y-6">
-            <h1 className="h1 font-semibold text-white">
+            <h1 className=" text-white">
               From Sketch to Success Turning Ideas into Digital Dreams.
             </h1>
-            <p className="p text-white">
+            <p className="text-xl text-white">
               Branverse partners with you to transform ideas into reality
               through cutting-edge websites, powerful marketing, and business
               solutions that pave the way for your lasting success and impact

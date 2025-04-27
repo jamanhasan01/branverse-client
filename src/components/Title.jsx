@@ -1,18 +1,17 @@
 import React from "react";
 
-const Title = ({ title, subtitle, text_align, hColor, pColor }) => {
-  const alignment = text_align || "center"; // default center if not provided
+const Title = ({ title, subtitle, hColor, pColor }) => {
 
   return (
-    <div className={`text-${alignment}`}>
+    <div className="w-full mx-auto text-center">
       <h2
-        className="mb-2 h2"
+        className="mb-4"
         style={{ color: hColor }} // use inline style
       >
         {title}
       </h2>
       <p
-        className={`w-1/2 ${alignment === "center" ? "mx-auto" : ""}`}
+        className={`w-1/2 text-xl mx-auto text-gray-500`}
         style={{ color: pColor }}
       >
         {subtitle}
