@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="w-10"><img src={'/light_logo.png'} alt="" /></div>
           {/* navlinks */}
           <div>
-            <ul className="flex gap-5 items-center text-lg font-semibold">{listItems}</ul>
+            <ul className="flex gap-5 items-center text-base font-semibold">{listItems}</ul>
           </div>
           {/* action buttons */}
           <div>
