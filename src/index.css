@@ -14,7 +14,7 @@
     @apply text-6xl leading-16;
   }
   h2 {
-    @apply text-5xl leading-16 font-semibold;
+    @apply text-5xl leading-14 font-semibold;
   }
   h3 {
     @apply text-4xl font-semibold;

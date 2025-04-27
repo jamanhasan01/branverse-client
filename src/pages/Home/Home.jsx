@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection"
 import ServicesSection from "./ServicesSection"
+import WhyBranverseSectoin from "./WhyBranverseSectoin"
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
 
         <HeroSection></HeroSection>
         <ServicesSection></ServicesSection>
+        <WhyBranverseSectoin></WhyBranverseSectoin>
     </>
   ) 
 }
