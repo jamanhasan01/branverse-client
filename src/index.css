@@ -4,21 +4,43 @@
 
 @layer base {
   :root {
-    --color-primary: #2563EB;
+    --color-main: #2563EB;
   }
 
   body {
     @apply font-sans;
   }
+  h1{
+    @apply text-6xl leading-16
+  }
+  h2{
+    @apply text-5xl leading-16 font-semibold
+  }
+  h3{
+    @apply text-4xl font-semibold
+  }
+  h4{
+    @apply text-3xl  font-semibold
+  }
+  h5{
+    @apply text-2xl  font-semibold
+  }
+  p{
+    @apply text-lg font-normal leading-7
+  }
 }
 
 @layer components {
   .container {
-    @apply mx-auto !px-4 sm:!px-6 lg:!px-8 !max-w-[1200px];
+    @apply mx-auto px-4 py-20 sm:px-6 lg:px-8 max-w-[1200px];
   }
 
   .bg-main {
     background-color: var(--color-main);
+  }
+
+  .button{
+    @apply px-2 py-2  font-bold text-base cursor-pointer rounded
   }
 
   .text-main {
