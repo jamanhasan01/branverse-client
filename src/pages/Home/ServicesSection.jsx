@@ -28,7 +28,7 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <section>
+    <section className="bg-amber-50">
       <div className="container">
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-3 items-start">

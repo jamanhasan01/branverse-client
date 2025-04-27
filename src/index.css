@@ -11,7 +11,7 @@
     @apply font-sans;
   }
   h1 {
-    @apply text-5xl leading-15;
+    @apply text-5xl leading-15 font-semibold;
   }
   h2 {
     @apply text-4xl leading-12 font-semibold;

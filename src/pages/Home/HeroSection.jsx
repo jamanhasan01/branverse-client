@@ -3,7 +3,7 @@ import heroImg from "../../assets/hero_image.png";
 const HeroSection = () => {
   return (
     <section className="bg-gradient-to-b from-[#2563EB] to-[#1E40AF] ">
-      <div className="container">
+      <div className="container pt-10">
         <div className="grid grid-cols-2 gap-5 items-center">
           {/*left side contents */}
           <div className=" space-y-6">
