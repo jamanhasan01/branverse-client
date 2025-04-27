@@ -54,7 +54,7 @@ const ServicesSection = () => {
                 className={`p-6 rounded-lg  hover:bg-gray-50 transition-colors border border-gray-200 flex flex-col items-center` }
               >
                 <div>{service.icon}</div>
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
+                <h5>{service.title}</h5>
               </div>
             ))}
           </div>
