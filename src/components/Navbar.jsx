@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <header
       className={`bg-main fixed left-0 top-0 z-40 w-full transition-all duration-300 ${
-        isScrolled ? "backdrop-blur-md bg-blue-600/90" : ""
+        isScrolled ? "backdrop-blur-md bg-blue-600/90 border-b-2 border-white/80" : ""
       }`}
     >
       <div className="container py-0">
