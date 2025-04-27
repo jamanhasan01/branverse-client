@@ -1,9 +1,8 @@
-import AnimatedBorderCard from "../../components/AnimatedBorderCard";
+import { MdConnectWithoutContact } from "react-icons/md";
 import Title from "../../components/Title";
 import {
   FiUsers,
   FiHeart,
-  FiLayers,
   FiClock,
   FiTrendingUp,
 } from "react-icons/fi";
@@ -63,7 +62,7 @@ const WhyBranverseSectoin = () => {
           </div>
 
           {/* Right Side - 5 Columns */}
-          <div className="col-span-12 lg:col-span-5 bg-blue-600 p-8 gap-4 flex flex-col justify-center text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="col-span-12 lg:col-span-5 bg-blue-600 p-8 gap-4 flex flex-col justify-center items-start text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="text-white text-3xl">
               <FiClock size={40} />
             </div>
@@ -73,6 +72,9 @@ const WhyBranverseSectoin = () => {
               committed to delivering quality work within the promised time
               frame, ensuring you never have to worry about missed deadlines.
             </p>
+            <button className="button flex items-center bg-main bg-white text-main !px-4">
+              Contact Us <MdConnectWithoutContact className="ml-2" />
+            </button>
           </div>
         </div>
       </div>

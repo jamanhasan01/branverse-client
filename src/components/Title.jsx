@@ -10,7 +10,7 @@ const Title = ({ title, subtitle, hColor, pColor }) => {
         {title}
       </h2>
       <p
-        className={`w-1/2 text-xl mx-auto text-gray-500`}
+        className={`w-full md:w-1/2 text-xl mx-auto text-gray-500`}
         style={{ color: pColor }}
       >
         {subtitle}
