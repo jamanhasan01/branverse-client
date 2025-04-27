@@ -1,7 +1,6 @@
 import React from "react";
 
 const Title = ({ title, subtitle, hColor, pColor }) => {
-
   return (
     <div className="w-full mx-auto text-center">
       <h2

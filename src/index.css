@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --color-main: #2563EB;
+    --color-main: #2563eb;
   }
 
   body {
     @apply font-sans;
   }
-  h1{
-    @apply text-6xl leading-16
+  h1 {
+    @apply text-6xl leading-16;
   }
-  h2{
-    @apply text-5xl leading-16 font-semibold
+  h2 {
+    @apply text-5xl leading-16 font-semibold;
   }
-  h3{
-    @apply text-4xl font-semibold
+  h3 {
+    @apply text-4xl font-semibold;
   }
-  h4{
-    @apply text-3xl  font-semibold
+  h4 {
+    @apply text-3xl  font-semibold;
   }
-  h5{
-    @apply text-2xl  font-semibold
+  h5 {
+    @apply text-2xl  font-semibold;
   }
-  p{
-    @apply text-lg font-normal leading-7
+  p {
+    @apply text-lg font-normal leading-7;
   }
 }
 
@@ -39,8 +39,8 @@
     background-color: var(--color-main);
   }
 
-  .button{
-    @apply px-2 py-2  font-bold text-base cursor-pointer rounded
+  .button {
+    @apply px-2 py-2  font-bold text-base cursor-pointer rounded;
   }
 
   .text-main {
