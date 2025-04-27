@@ -32,7 +32,7 @@ const ServicesSection = () => {
       <div className="container">
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-3 items-start">
-            <h2 className="">
+            <h2 className="text-main">
               What We Do Isn't Just Services,
               It's Strategy, Execution, and Results
             </h2>
