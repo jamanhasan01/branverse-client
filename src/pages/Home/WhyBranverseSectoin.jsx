@@ -9,7 +9,7 @@ import {
 
 const WhyBranverseSectoin = () => {
   return (
-    <section className="">
+    <section className="bg-fuchsia-50">
       <div className="container mx-auto">
         {/* Title section */}
         <Title

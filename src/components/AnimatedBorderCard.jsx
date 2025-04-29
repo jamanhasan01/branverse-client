@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const AnimatedBorderCard = ({
   children,
-  borderWidth = "4px",
+  borderWidth = "6px", // increased for visibility
   borderRadius = "16px",
-  colors = ["#f97316", "#eab308", "#84cc16"],
+  colors = ["#3ABEFF", "#2563EB", "#5EEAD4"], // better glowing combo
   duration = 6,
   className = "",
   contentClassName = "",
@@ -13,7 +13,7 @@ const AnimatedBorderCard = ({
     animate: {
       backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
       transition: {
-        duration: duration,
+        duration,
         ease: "linear",
         repeat: Infinity,
       },
@@ -23,25 +23,42 @@ const AnimatedBorderCard = ({
   const gradientColors = colors.join(", ");
 
   return (
-    <div className={`relative p-[2px] rounded-[${borderRadius}] ${className}`}>
-      {/* Animated background border */}
+    <div
+      className={`relative ${className}`}
+      style={{
+        borderRadius,
+        padding: borderWidth,
+      }}
+    >
+      {/* Glowing Layer */}
       <motion.div
-        className="absolute inset-0 rounded-[inherit] z-0"
+        className="absolute inset-0  opacity-70 brightness-125 z-0"
         style={{
           background: `linear-gradient(90deg, ${gradientColors})`,
           backgroundSize: "300% 300%",
-          borderRadius: borderRadius,
+          borderRadius,
         }}
         variants={gradientVariants}
         animate="animate"
       />
 
-      {/* Inner white content */}
-      <div
-        className={`relative bg-white z-10 h-full w-full ${contentClassName}`}
+      {/* Sharp Layer */}
+      <motion.div
+        className="absolute inset-0 z-10"
         style={{
-          borderRadius: `calc(${borderRadius} - ${borderWidth})`,
-          padding: "20px", // you can adjust
+          background: `linear-gradient(90deg, ${gradientColors})`,
+          backgroundSize: "300% 300%",
+          borderRadius,
+        }}
+        variants={gradientVariants}
+        animate="animate"
+      />
+
+      {/* Inner Content */}
+      <div
+        className={`relative bg-white z-20 ${contentClassName}`}
+        style={{
+          borderRadius,
         }}
       >
         {children}
