@@ -42,7 +42,7 @@ const PortfolioSection = () => {
       ></Title>
 
       <div className="grid md:grid-cols-3 gap-8 mt-10">
-        {projects.map(({ id, title, description, image, link }) => (
+        {projects.map(({  title, description, image, }) => (
 
             <div className="space-y-4 p-4 border border-gray-200 rounded-xl shadow-2xl">
               <img
