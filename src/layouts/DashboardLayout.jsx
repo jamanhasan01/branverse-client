@@ -1,17 +1,4 @@
-import { useState } from "react";
-import {
-  FiHome,
-  FiSettings,
-  FiUsers,
-  FiBarChart2,
-  FiCalendar,
-  FiFileText,
-  FiMail,
-  FiLogOut,
-  FiMenu,
-  FiX,
-  FiBell,
-} from "react-icons/fi";
+
 import Asidebar from "../components/dashboardComponents/Asidebar";
 import { Outlet } from "react-router-dom";
 
